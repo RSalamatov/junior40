@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="">
+    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Исправлен баг при регистрации">
+      <change afterPath="$PROJECT_DIR$/src/test/IMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/MatrixTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson1/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson1/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/Main1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/Main1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaTest1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaTest1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +43,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/javaTest1/src/homeLesson13",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/javaTest1/src/test",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\javaTest1\src\test" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\lesson11" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\lesson10" />
@@ -56,7 +62,7 @@
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main1">
+  <component name="RunManager" selected="JUnit.MatrixTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson13.Main" />
       <module name="javaTest1" />
@@ -109,26 +115,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lesson12.Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson12.Main1" />
+    <configuration name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson12.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatrixTest" />
         <item itemvalue="Application.Main1" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.homeWork.Main" />
-        <item itemvalue="Application.lesson12.Main1" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +149,19 @@
       <option name="presentableId" value="Default" />
       <updated>1692724240191</updated>
     </task>
+    <task id="LOCAL-00001" summary="Исправлен баг при регистрации">
+      <created>1697219607769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697219607769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправлен баг при регистрации" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен баг при регистрации" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -150,11 +170,6 @@
           <url>file://$PROJECT_DIR$/src/lesson2/Main9.java</url>
           <line>6</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lesson3/Main1.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lesson4/Main2.java</url>
