@@ -1,4 +1,4 @@
-package test;
+package test2;
 
 /**
  * Интерфейс работы с матрицами
