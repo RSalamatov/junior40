@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены junit тесты для ДЗ">
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithCommonIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithOneByte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhizGuava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaTest1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaTest1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MatrixTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MatrixTestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/javaTest1/src",
+    "last_opened_file_path": "C:/Users/User/Downloads/commons-io-2.11.0.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -49,6 +59,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson15" />
       <recent name="lesson10" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -64,66 +75,55 @@
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixTestCase.testTransposeTest2">
-    <configuration name="MatrixTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson15.Main" />
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="lesson15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixTestCase.testMulOnTheNumberTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson15.Main1" />
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="lesson15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testMulOnTheNumberTest2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixTestCase.testMulTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson15.Main2" />
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="lesson15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testMulTest2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixTestCase.testMulTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson15.Test" />
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="lesson15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testMulTest4" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main1" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MatrixTestCase.testTransposeTest2" />
-        <item itemvalue="JUnit.MatrixTestCase.testMulOnTheNumberTest2" />
-        <item itemvalue="JUnit.MatrixTestCase" />
-        <item itemvalue="JUnit.MatrixTestCase.testMulTest4" />
-        <item itemvalue="JUnit.MatrixTestCase.testMulTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697542537398</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены junit тесты для ДЗ">
+      <created>1697545642169</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697545642169</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -401,9 +401,9 @@ public class MatrixTestCase extends TestCase {
         double[][] forMatrixB = {{-9999999, -9999999, -9999999},
                 {-9999999, -9999999, -9999999},
                 {-9999999, -9999999, -9999999}};
-        double[][] forMatrixC = {{299999940000003, 299999940000003, 299999940000003},
-                {299999940000003, 299999940000003, 299999940000003},
-                {299999940000003, 299999940000003, 299999940000003}};
+        double[][] forMatrixC = {{29999994, 29999994, 29999994},
+                {29999994, 29999994, 29999994},
+                {29999994, 29999994, 29999994}};
         Matrix matrixA = new Matrix(forMatrixA);
         Matrix matrixB = new Matrix(forMatrixB);
         Matrix resultWant = new Matrix(forMatrixC);
@@ -545,7 +545,7 @@ public class MatrixTestCase extends TestCase {
     }
     public void testTransposeTest5() {
 
-        double[][] forMatrix = {{, 0, 0},
+        double[][] forMatrix = {{0, 0, 0},
                 {0, 0, 0},
                 {0, 0, 0}};
         double[][] MatrixResult = {{0, 0, 0},
