@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены junit тесты">
+    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены junit тесты рабочие">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/IMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2/IMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2/MatrixTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson10/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson10/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson10/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson10/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2/IMatrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2/Matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test2/MatrixTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson10" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\test" />
@@ -59,65 +64,12 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src" />
+      <recent name="C:\Users\User\IdeaProjects\javaTest1\src\test" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MatrixTestCase.testDeterminantTest1">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13.Main" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13.Main1" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson13.Main2" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test2.MatrixTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixTestCase.testDeterminantTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MatrixTestCase">
+    <configuration name="MatrixTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +79,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testDeterminantTest1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testMulTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testMulTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testMulTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testMulTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testMulTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testMulTest4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testSubTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testSubTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,15 +150,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatrixTestCase.testDeterminantTest1" />
-        <item itemvalue="JUnit.MatrixTest" />
-        <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MatrixTestCase" />
+        <item itemvalue="JUnit.MatrixTestCase.testMulTest4" />
+        <item itemvalue="JUnit.MatrixTestCase.testMulTest2" />
+        <item itemvalue="JUnit.MatrixTestCase.testMulTest1" />
+        <item itemvalue="JUnit.MatrixTestCase.testSubTest4" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\User\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="" />
@@ -166,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697222631251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавлены junit тесты рабочие">
+      <created>1697475531025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697475531025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +233,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Исправлен баг при регистрации" />
     <MESSAGE value="Добавлены junit тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены junit тесты" />
+    <MESSAGE value="Добавлены junit тесты рабочие" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены junit тесты рабочие" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -235,7 +261,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lesson10/Main.java</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

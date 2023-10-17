@@ -16,7 +16,6 @@ public class Matrix implements IMatrix {
         }
     }
 
-
     @Override
     public int getRows() {
         return nums.length;
@@ -29,18 +28,14 @@ public class Matrix implements IMatrix {
 
     @Override
     public double getValueAt(int rowIndex, int colIndex) throws IndexOutOfBoundsException {
-        if (rowIndex < 0 || rowIndex >= getRows() || colIndex < 0 || colIndex >= getColumns()) {
-            throw new IndexOutOfBoundsException("Индекс столбца не можетбыть меньше нуля или больше (или равно) " +
-                    "количества столбцов матрицы");
-        }
+        if (rowIndex < 0 || rowIndex > getRows() || colIndex < 0 || colIndex > getColumns()) return -1;
         return nums[rowIndex][colIndex];
     }
 
     @Override
     public void setValueAt(int rowIndex, int colIndex, double value) throws IndexOutOfBoundsException {
-        if (rowIndex < 0 || rowIndex >= getRows() || colIndex < 0 || colIndex >= getColumns()) {
-            throw new IndexOutOfBoundsException("Индекс строки не может быть меньше нуля или больше (или равно) " +
-                    "количества строк матрицы");
+        if (rowIndex < 0 || rowIndex > getRows() || colIndex < 0 || colIndex > getColumns()) {
+            return;
         }
         nums[rowIndex][colIndex] = value;
     }
@@ -50,12 +45,9 @@ public class Matrix implements IMatrix {
         // otherMatrix = b
         // this = a
         if (this.getRows() != otherMatrix.getRows() || this.getColumns() != otherMatrix.getColumns()) {
-            throw new IllegalArgumentException("Матрица не равны!!!");
+            System.out.println("Матрицы не равны!!!!");
+            return null;
         }
-        if (otherMatrix == null) {
-            throw new NullPointerException("Второй индекс не может быть null");
-        }
-
         Matrix result = new Matrix(this.getRows(), this.getColumns());
         for (int i = 0; i < result.getRows(); i++) {
             for (int j = 0; j < result.getColumns(); j++) {
@@ -68,62 +60,162 @@ public class Matrix implements IMatrix {
     @Override
     public IMatrix sub(IMatrix otherMatrix) throws IllegalArgumentException, NullPointerException {
         if (this.getRows() != otherMatrix.getRows() || this.getColumns() != otherMatrix.getColumns()) {
-            throw new IllegalArgumentException("Матрица не равны!!!");
+            System.out.println("Матрицы не равны!!!!");
+            return null;
         }
-        if (otherMatrix == null) {
-            throw new NullPointerException("Второй индекс не может быть null");
+        Matrix result = new Matrix(this.getRows(), this.getColumns());
+        for (int i = 0; i < result.getRows(); i++) {
+            for (int j = 0; j < result.getColumns(); j++) {
+                result.setValueAt(i, j, this.getValueAt(i, j) - otherMatrix.getValueAt(i, j));
+            }
         }
-        return null;
+        return result;
     }
 
     @Override
     public IMatrix mul(IMatrix otherMatrix) throws IllegalArgumentException, NullPointerException {
-        if (this.getRows() != otherMatrix.getRows() || this.getColumns() != otherMatrix.getColumns()) {
-            throw new IllegalArgumentException("Матрица не равны!!!");
+        if (this.getColumns() != otherMatrix.getRows()) {
+            System.out.println("Матрицы не совместимы!!!!");
+            return null;
         }
-        if (otherMatrix == null) {
-            throw new NullPointerException("Второй индекс не может быть null");
+        double sum = 0;
+        Matrix result = new Matrix(this.getRows(), otherMatrix.getColumns());
+        for (int i = 0; i < result.getRows(); i++) {
+            for (int j = 0; j < result.getColumns(); j++) {
+                for (int k = 0; k < this.getColumns(); k++) {
+                    sum += this.getValueAt(i, k) * otherMatrix.getValueAt(k, j);
+                }
+                result.setValueAt(i, j, sum);
+                sum = 0;
+            }
         }
-        return null;
+        return result;
     }
 
     @Override
     public IMatrix mul(double value) {
-        return null;
+        Matrix result = new Matrix(this.getRows(), this.getColumns());
+        for (int i = 0; i < result.getRows(); i++) {
+            for (int j = 0; j < result.getColumns(); j++) {
+                result.setValueAt(i, j, this.getValueAt(i, j) * value);
+            }
+        }
+        return result;
     }
 
     @Override
     public IMatrix transpose() {
-        return null;
+        Matrix result = new Matrix(this.getColumns(), this.getRows());
+        for (int i = 0; i < result.getRows(); i++) {
+            for (int j = 0; j < result.getColumns(); j++) {
+                result.setValueAt(i, j, this.getValueAt(j, i));
+            }
+        }
+        return result;
     }
 
     @Override
     public void fillMatrix(double value) {
-
+        for (int i = 0; i < this.getRows(); i++) {
+            for (int j = 0; j < this.getColumns(); j++) {
+                this.setValueAt(i, j, value);
+            }
+        }
     }
 
     @Override
     public double determinant() {
-        return 0;
+        double result = 0;
+        if (!this.isSquareMatrix()) {
+            System.out.println("Количество строк не равно количеству столбцов!!");
+        } else if (nums.length == 1) {
+            result = this.getValueAt(0, 0);
+        } else if (nums.length == 2) {
+            result = (this.getValueAt(0, 0) * this.getValueAt(1, 1)) -
+                    (this.getValueAt(1, 0) * this.getValueAt(0, 1));
+        } else {
+            double det = 0;
+            for (int i = 0; i < nums.length; i++) {
+                double[][] subMatrix = createSubMatrix(nums, 0, i);
+                det += Math.pow(-1, i) * nums[0][i] * new Matrix(subMatrix).determinant();
+            }
+            result = det;
+        }
+        return result;
     }
+
+    private double[][] createSubMatrix(double[][] matrix, int rowToRemove, int colToRemove) {
+        int n = matrix.length;
+        double[][] subMatrix = new double[n - 1][n - 1];
+        int subMatrixRow = 0;
+        int subMatrixCol;
+
+        for (int i = 0; i < n; i++) {
+            if (i != rowToRemove) {
+                subMatrixCol = 0;
+                for (int j = 0; j < n; j++) {
+                    if (j != colToRemove) {
+                        subMatrix[subMatrixRow][subMatrixCol] = matrix[i][j];
+                        subMatrixCol++;
+                    }
+                }
+                subMatrixRow++;
+            }
+        }
+
+        return subMatrix;
+    }
+
 
     @Override
     public boolean isNullMatrix() {
-        return false;
+        for (int i = 0; i < this.getRows(); i++) {
+            for (int j = 0; j < this.getColumns(); j++) {
+                if (this.getValueAt(i, j) != 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean isIdentityMatrix() {
-        return false;
+        if (this.isSquareMatrix()) {
+            for (int i = 0; i < this.getRows(); i++) {
+                for (int j = 0; j < this.getColumns(); j++) {
+                    if (i == j && this.getValueAt(i, j) != 1) {
+                        return false;
+                    } else if (i != j && this.getValueAt(i, j) != 0) {
+                        return false;
+                    }
+
+                }
+            }
+
+        }
+        return true;
     }
+
 
     @Override
     public boolean isSquareMatrix() {
-        return false;
+        if (this.getRows() != this.getColumns()) {
+
+            return false;
+        }
+        return true;
     }
 
     @Override
     public void printToConsole() {
+        for (int i = 0; i < this.getRows(); i++) {
+            for (int j = 0; j < this.getColumns(); j++) {
+                System.out.print(this.getValueAt(i, j) + " ");
+            }
 
+            System.out.print("\n");
+        }
+        System.out.println();
     }
 }

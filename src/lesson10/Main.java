@@ -10,11 +10,13 @@ public class Main {
                            {2, 5, 5, 1},
                            {2, 5, 2, 1}};
 
+
+
         Matrix a = new Matrix(forA);
         Matrix b = new Matrix(forB);
 
 
-        IMatrix resultAdd = a.add(b);
-        resultAdd.printToConsole();
+//        IMatrix resultAdd = a.add(b);
+//        resultAdd.printToConsole();
     }
 }
