@@ -363,9 +363,9 @@ public class MatrixTestCase extends TestCase {
         double[][] forMatrixB = {{99999999, 99999999, 99999999},
                 {99999999, 99999999, 99999999},
                 {99999999, 99999999, 99999999}};
-        double[][] forMatrixC = {{29999999400000000, 29999999400000000, 29999999400000000},
-                {29999999400000000, 29999999400000000, 29999999400000000},
-                {29999999400000000, 29999999400000000, 29999999400000000}};
+        double[][] forMatrixC = {{299999994, 299999994, 299999994},
+                {299999994, 299999994, 299999994},
+                {299999994, 299999994, 299999994}};
 
         Matrix matrixA = new Matrix(forMatrixA);
         Matrix matrixB = new Matrix(forMatrixB);
@@ -411,22 +411,149 @@ public class MatrixTestCase extends TestCase {
 
         assertEquals(resultFact, resultWant);
     }
-    public void testMulTest5() {
+    public void testMulOnTheNumberTest1() {
 
         double[][] forMatrixA = {{1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}};
+        double value = 1;
         double[][] forMatrixB = {{1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}};
-
-        double[][] forMatrixC = {{2, 4, 6},
-                {8, 10, 12},
-                {14, 16, 18}};
         Matrix matrixA = new Matrix(forMatrixA);
-        Matrix matrixB = new Matrix(forMatrixB);
-        Matrix resultWant = new Matrix(forMatrixC);
-        IMatrix resultFact = matrixA.mul(matrixB);
+        Matrix resultWant = new Matrix(forMatrixB);
+
+        IMatrix resultFact = matrixA.mul(value);
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testMulOnTheNumberTest2() {
+
+        double[][] forMatrixA = {{1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
+        double value = -1;
+        double[][] forMatrixB = {{-1, -2, -3},
+                {-4, -5, -6},
+                {-7, -8, -9}};
+        Matrix matrixA = new Matrix(forMatrixA);
+        Matrix resultWant = new Matrix(forMatrixB);
+
+        IMatrix resultFact = matrixA.mul(value);
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testMulOnTheNumberTest3() {
+
+        double[][] forMatrixA = {{1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
+        double value = 99999999;
+        double[][] forMatrixB = {{99999999, 199999998, 299999997},
+                {399999996, 499999995, 599999994},
+                {699999993, 799999992, 899999991}};
+        Matrix matrixA = new Matrix(forMatrixA);
+        Matrix resultWant = new Matrix(forMatrixB);
+
+        IMatrix resultFact = matrixA.mul(value);
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testMulOnTheNumberTest4() {
+
+        double[][] forMatrixA = {{1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
+        double value = -99999999;
+        double[][] forMatrixB = {{-99999999, -199999998, -299999997},
+                {-399999996, -499999995, -599999994},
+                {-699999993, -799999992, -899999991}};
+        Matrix matrixA = new Matrix(forMatrixA);
+        Matrix resultWant = new Matrix(forMatrixB);
+
+        IMatrix resultFact = matrixA.mul(value);
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testMulOnTheNumberTest5() {
+
+        double[][] forMatrixA = {{1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}};
+        double value = 0;
+        double[][] forMatrixB = {{0, 0, 0},
+                {0, 0, 0},
+                {0, 0, 0}};
+        Matrix matrixA = new Matrix(forMatrixA);
+        Matrix resultWant = new Matrix(forMatrixB);
+
+        IMatrix resultFact = matrixA.mul(value);
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testTransposeTest1() {
+
+        double[][] forMatrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        double[][] MatrixResult = {{1, 4, 7}, {2, 5, 8}, {3, 6, 9}};
+        Matrix matrix = new Matrix(forMatrix);
+        Matrix resultWant = new Matrix(MatrixResult);
+        IMatrix resultFact = matrix.transpose();
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testTransposeTest2() {
+
+        double[][] forMatrix = {{-9999999, -9999999, -9999999},
+                {9999999, 9999999, 9999999},
+                {9999999, 9999999, 9999999}};
+        double[][] MatrixResult = {{-9999999, 9999999, 9999999},
+                {-9999999, 9999999, 9999999},
+                {-9999999, 9999999, 9999999}};
+        Matrix matrix = new Matrix(forMatrix);
+        Matrix resultWant = new Matrix(MatrixResult);
+        IMatrix resultFact = matrix.transpose();
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testTransposeTest3() {
+
+        double[][] forMatrix = {{1, 2, 3},
+                {0, 0, 0},
+                {0, 0, 0}};
+        double[][] MatrixResult = {{1, 0, 0},
+                {2, 0, 0},
+                {3, 0, 0}};
+        Matrix matrix = new Matrix(forMatrix);
+        Matrix resultWant = new Matrix(MatrixResult);
+        IMatrix resultFact = matrix.transpose();
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testTransposeTest4() {
+
+        double[][] forMatrix = {{1, 0, 0},
+                {2, 0, 0},
+                {3, 0, 0}};
+        double[][] MatrixResult = {{1, 2, 3},
+                {0, 0, 0},
+                {0, 0, 0}};
+        Matrix matrix = new Matrix(forMatrix);
+        Matrix resultWant = new Matrix(MatrixResult);
+        IMatrix resultFact = matrix.transpose();
+
+        assertEquals(resultFact, resultWant);
+    }
+    public void testTransposeTest5() {
+
+        double[][] forMatrix = {{, 0, 0},
+                {0, 0, 0},
+                {0, 0, 0}};
+        double[][] MatrixResult = {{0, 0, 0},
+                {0, 0, 0},
+                {0, 0, 0}};
+        Matrix matrix = new Matrix(forMatrix);
+        Matrix resultWant = new Matrix(MatrixResult);
+        IMatrix resultFact = matrix.transpose();
 
         assertEquals(resultFact, resultWant);
     }
