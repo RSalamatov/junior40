@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены junit тесты для ДЗ">
-      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithCommonIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithOneByte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhizGuava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/Test.java" afterDir="false" />
+    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены классы lesson15">
+      <change afterPath="$PROJECT_DIR$/src/lesson10/MatrixTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithIOApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaTest1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaTest1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson10/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson10/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson15/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/MatrixTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MatrixTestCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,51 +66,13 @@
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\lesson10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\javaTest1\src\lesson10" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\test" />
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Test">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson15.Main" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson15.Main1" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson15.Main2" />
-      <module name="javaTest1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson15.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson15.Test" />
       <module name="javaTest1" />
@@ -128,7 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixTestCase.testTransposeTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatrixTestCase (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson10" />
+      <option name="MAIN_CLASS_NAME" value="lesson10.MatrixTestCase" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +111,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testTransposeTest2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testSubTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testSubTest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTestCase.testSubTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaTest1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson10" />
+      <option name="MAIN_CLASS_NAME" value="lesson10.MatrixTestCase" />
+      <option name="METHOD_NAME" value="testSubTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MatrixTestCase.testTransposeTest2" />
+        <item itemvalue="JUnit.MatrixTestCase.testSubTest6" />
+        <item itemvalue="JUnit.MatrixTestCase (1)" />
+        <item itemvalue="JUnit.MatrixTestCase.testSubTest3" />
+        <item itemvalue="JUnit.MatrixTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697545642169</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Добавлены классы lesson15">
+      <created>1697567731721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697567731721</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +263,8 @@
     <MESSAGE value="Добавлены junit тесты" />
     <MESSAGE value="Добавлены junit тесты рабочие" />
     <MESSAGE value="Добавлены junit тесты для ДЗ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены junit тесты для ДЗ" />
+    <MESSAGE value="Добавлены классы lesson15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены классы lesson15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -281,6 +293,16 @@
           <url>file://$PROJECT_DIR$/src/lesson10/Main.java</url>
           <line>19</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/MatrixTestCase.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lesson10/MatrixTestCase.java</url>
+          <line>298</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

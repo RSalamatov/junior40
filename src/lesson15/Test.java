@@ -20,5 +20,11 @@ public class Test {
         long time6 = System.currentTimeMillis();
         System.out.println("Копирование по одному Apache Common IO: " + (time6 - time5));
 
+        CopyWhithIOApi copyWhithIOApi = new CopyWhithIOApi();
+        long time7 = System.currentTimeMillis();
+        copyWhithIOApi.copy("C:\\Users\\User\\Downloads\\537.58-desktop-win10-win11-64bit-international-dch-whql.exe", "test3.exe");
+        long time8 = System.currentTimeMillis();
+        System.out.println("Копирование по одному IO API: " + (time8 - time7));
+
     }
 }
