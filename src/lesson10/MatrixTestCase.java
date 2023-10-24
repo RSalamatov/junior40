@@ -1,4 +1,4 @@
-package test;
+package lesson10;
 
 import junit.framework.TestCase;
 import org.junit.Test;

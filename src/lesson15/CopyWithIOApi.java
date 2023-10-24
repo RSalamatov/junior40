@@ -2,7 +2,7 @@ package lesson15;
 
 import java.io.*;
 
-public class CopyWhithIOApi implements CopyUtils {
+public class CopyWithIOApi implements CopyUtils {
     @Override
     public void copy(String from, String to) {
         try {

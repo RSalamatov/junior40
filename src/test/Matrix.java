@@ -144,10 +144,10 @@ public class Matrix implements IMatrix {
         return Arrays.deepHashCode(nums);
     }
 
-    @Override
-    public String toString() {
-        return "Matrix{" +
-                "nums=" + Arrays.toString(nums) +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Matrix{" +
+//                "nums=" + Arrays.toString(nums) +
+//                '}';
+//    }
 }

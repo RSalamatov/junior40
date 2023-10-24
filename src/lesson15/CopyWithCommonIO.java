@@ -1,19 +1,20 @@
 package lesson15;
 
-import com.google.common.io.Files;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
 
-public class CopyWhizGuava implements CopyUtils{
+public class CopyWithCommonIO implements CopyUtils{
 
     @Override
     public void copy(String from, String to) {
-        File fileFrom = new File(from);
-        File fileTo = new File(to);
+
+            File fileFrom = new File(from);
+            File fileTo = new File(to);
 
         try {
-            Files.copy(fileFrom, fileTo);
+            FileUtils.copyFile(fileFrom, fileTo);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

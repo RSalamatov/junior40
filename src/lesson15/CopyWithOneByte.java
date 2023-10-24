@@ -5,7 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class CopyWhithOneByte implements CopyUtils{
+public class CopyWithOneByte implements CopyUtils{
     @Override
     public void copy(String from, String to) {
         try {

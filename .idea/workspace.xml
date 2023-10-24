@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлены классы lesson15">
+    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="Добавлен класс CopyWhithIOApi">
       <change afterPath="$PROJECT_DIR$/src/lesson10/MatrixTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithIOApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson15/CopyWhithNioApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson10/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson10/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson15/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/Test.java" afterDir="false" />
@@ -46,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/User/Downloads/commons-io-2.11.0.jar",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/javaTest1",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -219,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697567731721</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавлен класс CopyWhithIOApi">
+      <created>1697786148313</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697786148313</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +271,8 @@
     <MESSAGE value="Добавлены junit тесты рабочие" />
     <MESSAGE value="Добавлены junit тесты для ДЗ" />
     <MESSAGE value="Добавлены классы lesson15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлены классы lesson15" />
+    <MESSAGE value="Добавлен класс CopyWhithIOApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен класс CopyWhithIOApi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

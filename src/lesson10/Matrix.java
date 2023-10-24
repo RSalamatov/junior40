@@ -1,5 +1,7 @@
 package lesson10;
 
+import java.util.Arrays;
+
 public class Matrix implements IMatrix {
 
     private double[][] nums;
@@ -217,5 +219,20 @@ public class Matrix implements IMatrix {
             System.out.print("\n");
         }
         System.out.println();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Matrix matrix = (Matrix) o;
+
+        return Arrays.deepEquals(nums, matrix.nums);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.deepHashCode(nums);
     }
 }
