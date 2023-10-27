@@ -1,7 +1,9 @@
 package lesson15;
 
+import java.io.IOException;
+
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         CopyWithOneByte copyWhithOneByte = new CopyWithOneByte();
         long time1 = System.currentTimeMillis();
         copyWhithOneByte.copy("C:\\Users\\User\\Downloads\\537.58-desktop-win10-win11-64bit-international-dch-whql.exe", "test1.exe");

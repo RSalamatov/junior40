@@ -4,8 +4,8 @@ import java.io.*;
 
 public class CopyWithIOApi implements CopyUtils {
     @Override
-    public void copy(String from, String to) {
-        try {
+    public void copy(String from, String to) throws IOException {
+
             InputStream in = new BufferedInputStream(new FileInputStream(from));
             OutputStream out = new BufferedOutputStream(new FileOutputStream(to));
 
@@ -15,8 +15,6 @@ public class CopyWithIOApi implements CopyUtils {
                 out.write(buffer, 0, lengthRead);
                 out.flush();
             }
-        } catch (java.io.IOException e) {
-            e.printStackTrace();
-        }
+
     }
 }

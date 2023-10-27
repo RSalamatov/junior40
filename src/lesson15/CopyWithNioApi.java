@@ -8,15 +8,12 @@ import java.nio.file.StandardCopyOption;
 
 public class CopyWithNioApi implements CopyUtils {
     @Override
-    public void copy(String from, String to) {
+    public void copy(String from, String to) throws IOException {
 
         Path fileFrom = Paths.get(from);
         Path fileTo = Paths.get(to);
-        try {
-            Files.copy(fileFrom, fileTo, StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        Files.copy(fileFrom, fileTo, StandardCopyOption.REPLACE_EXISTING);
+
 
     }
 
