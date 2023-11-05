@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="добавлен lesson17">
-      <change afterPath="$PROJECT_DIR$/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/AbstractTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/CopyFileTaskImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/FindFilesTaskImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/TaskExecutorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson17/threads/TaskStorageImpl.java" afterDir="false" />
+    <list default="true" id="6463ee37-af13-4ed4-8fe5-e3ac689dbe9c" name="Changes" comment="добавлен threds">
+      <change afterPath="$PROJECT_DIR$/src/lesson20/Discipline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson20/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson20/Term.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaTest1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaTest1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyWithCommonIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyWithCommonIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyWithGuava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyWithGuava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyWithIOApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyWithIOApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyWithNioApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyWithNioApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/CopyWithOneByte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/CopyWithOneByte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson15/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson15/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/javaTest1",
+    "last_opened_file_path": "C:/Users/User/Downloads/mysql-connector-java-8.0.30.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -82,7 +71,7 @@
       <recent name="C:\Users\User\IdeaProjects\javaTest1\src\homeLesson13" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lesson17.threads.Main">
+  <component name="RunManager" selected="Application.lesson20.Main">
     <configuration name="Leading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson17.Leading" />
       <module name="javaTest1" />
@@ -135,29 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatrixTestCase.testSubTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="lesson20.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson20.Main" />
       <module name="javaTest1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson10.*" />
+          <option name="PATTERN" value="lesson20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson10" />
-      <option name="MAIN_CLASS_NAME" value="lesson10.MatrixTestCase" />
-      <option name="METHOD_NAME" value="testSubTest6" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson20.Main" />
         <item itemvalue="Application.lesson17.threads.Main" />
         <item itemvalue="Application.Leading" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.MatrixTestCase.testSubTest6" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698172341782</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавлен threds">
+      <created>1698433151356</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698433151356</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,7 +284,8 @@
     <MESSAGE value="Добавлен класс CopyWhithIOApi" />
     <MESSAGE value="Добавлен класс CopyWithNioApi" />
     <MESSAGE value="добавлен lesson17" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлен lesson17" />
+    <MESSAGE value="добавлен threds" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен threds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
